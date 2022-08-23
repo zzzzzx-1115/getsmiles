@@ -5,9 +5,9 @@ from multiprocessing import Pool
 from functools import partial
 
 def haha(x):
-    return Chem.RDKFingerprint(x, maxPath=15)
+    return Chem.RDKFingerprint(x, maxPath=10)
 def hehe(x):
-    return Chem.RDKFingerprint(x, maxPath=25)
+    return Chem.RDKFingerprint(x, maxPath=20)
 
 def nt(x, fp1, fp2, lines1, lines2):
     sm = DataStructs.FingerprintSimilarity(fp1[x[0]], fp2[x[1]])
