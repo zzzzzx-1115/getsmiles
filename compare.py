@@ -21,7 +21,7 @@ if __name__ == '__main__':
     lines2 = [line.strip("\r\n ") for line in open('refined.txt')]
     mols1 = [Chem.MolFromSmiles(line) for line in lines1]
     mols2 = [Chem.MolFromSmiles(line) for line in lines2]
-    print(haha(mols1[0]))
+    #print(haha(mols1[0]))
     mols1_fp = pool.map(haha, mols1)
     mols2_fp = pool.map(hehe, mols2)
     index_pair = []
@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
 
 
-    print('begin!')
+    #print('begin!')
     for i in range(len(mols1)):
         for j in range(len(mols2)):
             index_pair.append((i, j))
