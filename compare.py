@@ -5,7 +5,7 @@ from multiprocessing import Pool
 from functools import partial
 
 def haha(x):
-    return Chem.RDKFingerprint(x, maxPath=10)
+    return Chem.RDKFingerprint(x, maxPath=17)
 def hehe(x):
     return Chem.RDKFingerprint(x, maxPath=17)
 
